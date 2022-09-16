@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+  <title>Movies</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__container container">
+      <form class="js-form pt-5">
+        <div class="row">
+            <div class="col-12 d-flex mb-4">
+                <label class="w-50 mx-auto form-label mb-0">
+                    <input class="form-control js-search-input" type="text" placeholder="Film title">
+                </label>
+            </div>
+
+            <div class="col-12 w-50 mx-auto mb-4">
+                <label class="w-100">
+                    <select class="form-select select-all  js-categories-select">
+                        <option value="All">All</option>
+                    </select>
+                </label>
+            </div>
+            
+            <div class="col-12 d-flex">
+                <select class="form-select select-renting w-50 mx-auto js-sort-select" name="" id="">
+                    <option hidden>Tanlang</option>
+                    <option value="az">A-Z</option>
+                    <option value="za">Z-A</option>
+                    <option value="ratingTop">Reytingi yuqori</option>
+                    <option value="ratingBottom">Reytingi Pas</option>
+                </select>
+            </div>
+
+            <div class="col-12 d-flex mt-4">
+                <label class="w-50 mx-auto form-label mb-0" for="">
+                    <input class="form-control control-reting js-film-rating" type="number" value="6" placeholder="7" step="any">
+                </label>
+            </div>
+
+            <div class="col-2 mx-auto mt-4">
+            <button  class="btn btn-success w-100 p-1
+            fs-4 d-inline-block js-search-btn" type="submit">Send</button>
+            </div>
+        </div>
+      </form>
+    </div>
+  </header>
+
+  <main  class="main">
+    <section class="hero text-center p-5">
+      <div class="container">
+        <h1 class="hero__title mb-5">Movies</h1>
+
+        <ul class="list list-unstyled d-flex flex-wrap justify-content-between align-items-start row">
+        </ul>
+      </div> 
+    </section>
+  </main>
+
+   <!-- Modal -->
+  <div class=" modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title title_modal" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-modal">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="./bootstrap/js/bootstrap.bundle.js"></script>
+  <script src="./js/movies.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+
+</html>
